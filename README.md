@@ -10,11 +10,12 @@ This project demonstrates how to implement pagination with Atlas Search. It's a 
 
 - Node.js installed for the backend.
 - Python installed for serving the frontend.
-- A MongoDB Atlas cluster.
+- A MongoDB Atlas cluster and load sample Dataset.
+- An Atlas search index created on sample_mflix.comments collection named "sidx_on_name" on field name or even default index with dynamic mapping works too. Check the backend code to make appropriate changes if needed.
 
 ### Installation and Setup
 
-1. **Clone the repository:**
+1. **Clone the repository:**https://www.mongodb.com/docs/atlas/atlas-search/paginate-results/#paginate-the-results-sequentially
    ```bash
    git clone <repository-url>
    ```
