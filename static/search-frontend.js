@@ -44,7 +44,7 @@ function populateTable(data) {
         let row = tableBody.insertRow();
         Object.values(item).forEach((text, index) => {
             // Exclude the pagination token from being displayed
-            if (index < Object.values(item).length - 1) {
+            if (index < Object.values(item).length - 2) {
                 let cell = row.insertCell();
                 let textNode = document.createTextNode(text);
                 cell.appendChild(textNode);

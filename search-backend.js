@@ -60,11 +60,9 @@ app.get('/data', async (req, res) => {
         ];
 
         const results = await collection.aggregate(aggregation).toArray();
-        console.log(JSON.stringify(aggregation))
         res.json(results);
     } catch (error) {
         res.status(500).send(error.toString());
-        console.log(error)
     } finally {
         await client.close();
     }
